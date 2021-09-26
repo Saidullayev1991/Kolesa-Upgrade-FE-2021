@@ -32,7 +32,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    padding: 56px 56px 64px;
+    padding: 56px;
     max-width: 1039px;
     min-width: 1039px;
     border-radius: 16px;
@@ -47,6 +47,20 @@ body {
 
 .container {
     display: flex;
+}
+
+.close_modal_btn {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    width: 32px;
+    height: 32px;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-image: url(/src/assets/close-big.svg);
+    background-size: contain;
 }
 
 .hoody {
@@ -93,7 +107,8 @@ body {
     font-weight: var(--title-fw);
     font-size: var(--title-fsz);
     line-height: var(--title-lh);
-    margin-bottom: 24px;
+    margin-top: 0;
+    margin-bottom: 8px;
 }
 
 .description_info_button {
@@ -153,7 +168,7 @@ body {
 .radioblock {
     display: flex;
     flex-wrap: wrap;
-    min-width: 568px;
+    max-width: 500px;
 }
 
 input {
@@ -172,6 +187,8 @@ input {
     margin-right: 8px;
     min-width: 96px;
     box-sizing: border-box;
+    cursor: pointer;
+    margin-bottom: 8px;
 }
 
 .color1::before {
@@ -228,4 +245,17 @@ input:checked + label {
 
 .chozen {
     background: #d6ecfb;
+}
+
+.details_title {
+    font-weight: var(--title-fw);
+    margin-bottom: 4px;
+}
+
+.details_info {
+    margin-bottom: 24px;
+}
+
+.order_info_title {
+    font-weight: var(--title-fw);
 }
