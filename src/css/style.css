@@ -105,7 +105,6 @@ h6 {
 .description {
     display: flex;
     flex-direction: column;
-    margin-left: 24px;
     text-align: left;
 }
 
