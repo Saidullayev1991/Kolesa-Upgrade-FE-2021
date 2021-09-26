@@ -166,7 +166,7 @@ h6 {
     height: 68px;
     align-items: left;
     justify-content: center;
-    background-image: url(./src/assets/bag.png);
+    background-image: url(/src/assets/bag.png);
     background-repeat: no-repeat;
     background-position: 140px 12px;
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
@@ -217,21 +217,21 @@ input {
 }
 
 .color1::before {
-    content: url(./src/assets/blue_block.svg);
+    content: url(/src/assets/blue_block.svg);
     position: absolute;
     margin-right: 8px;
     display: inline-block;
 }
 
 .color2::before {
-    content: url(./src/assets/melange_block.svg);
+    content: url(/src/assets/melange_block.svg);
     position: absolute;
     margin-right: 8px;
     display: inline-block;
 }
 
 .color3::before {
-    content: url(./src/assets/grey_block.svg);
+    content: url(/src/assets/grey_block.svg);
     position: absolute;
     margin-right: 8px;
     display: inline-block;
