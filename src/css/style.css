@@ -34,6 +34,8 @@ h6 {
     margin-bottom: 0;
 }
 
+/* /////////////////////Modal Window/////////// */
+
 .order_wrapper {
     box-sizing: border-box;
     position: absolute;
@@ -73,6 +75,8 @@ h6 {
     background-size: contain;
 }
 
+/* /////////////////////Images block/////////// */
+
 .hoody {
     margin-bottom: 16px;
 }
@@ -98,6 +102,8 @@ h6 {
     border: 1px solid #2a81dd;
     border-radius: 8px;
 }
+
+/* /////////////////////Description Block/////////// */
 
 .description {
     display: flex;
@@ -177,7 +183,7 @@ h6 {
     margin: 0;
 }
 
-/* ///////////////////radio block////////////////////// */
+/* ///////////////////radio block colors////////////////////// */
 
 .radioblock {
     display: flex;
@@ -240,7 +246,7 @@ input:checked + label {
     margin-left: 39px;
 }
 
-/* ///////////////////sizes////////////////////// */
+/* /////////////////// radio block sizes////////////////////// */
 
 .description_size_name {
     display: flex;
@@ -280,7 +286,7 @@ input:checked + label {
     line-height: 24px;
 }
 
-/* ////////////////Details////////////////// */
+/* ////////////////Details block////////////////// */
 .details_info {
     margin-bottom: 24px;
     margin-top: 4px;
