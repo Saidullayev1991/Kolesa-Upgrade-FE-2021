@@ -1,13 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>Lesson2</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="order_wrapper">
+            <div class="container">
+                <div class="close_button">
+                    <button class="close_modal_btn">
+                    </button>
+                </div>
+                <div class="image">
+                    <img src="./src/assets/hoody.jpg" alt="hoody_image" class="hoody" width="330" height="330">
+                    <div class="image_prview">
+                        <img class="preview_img" src="./src/assets/first.png" alt="melange hoody">
+                        <img class="preview_img active" src="./src/assets/second.png" alt="blue hoody">
+                        <img class="preview_img" src="./src/assets/third.png" alt="grey hoody">
+
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="description_info">
+                        <h3 class="description_info_title">
+                            Футболка "Эволюционируй или сдохни"
+                        </h3>
+
+                        <div class="description_info_block">
+                            <div class="points">
+                                <p class="description_info_points">
+                                    100 баллов
+                                </p>
+                                <button class="description_info_btn">Попросить 50 баллов</button>
+                            </div>
+                            <div class="ballance">
+                                <p class="ballance_text">
+                                    Твой балланс:
+                                </p>
+                                <p class="ballance_count">
+                                    50 баллов
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="description_colors">
+                        <h6 class="color_text">
+                            Цвета:
+                        </h6>
+                        <div class="radioblock">
+                            <div class="colours">
+                                <div class="radio1">
+                                    <input class="radio" type="radio" id="blue" name="colors" checked>
+                                    <label class="label_color color1" for="blue">
+                                        <span class="label_text">Синий</span>
+                                    </label>
+                                </div>
+
+                                <div class="radio2">
+                                    <input class="radio" type="radio" id="melange" name="colors">
+                                    <label class="label_color color2" for="melange">
+                                        <span class="label_text">Бежевый</span>
+                                    </label>
+                                </div>
+                                <div class="radio3">
+                                    <input class="radio" type="radio" id="grey" name="colors">
+                                    <label class="label_color color3" for="grey">
+                                        <span class="label_text">Серый</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description_sizes">
+                            <h6 class="description_size_text">
+                                Размер:
+                            </h6>
+                            <div class="description_size_name">
+                                <div class="sizes">
+                                    <input class="radio" type="radio" id="s" name="sizes" checked>
+                                    <label class="label_size size1" for="s">
+                                        <span class="size_text">s</span>
+                                    </label>
+                                </div>
+
+                                <div class="sizes">
+                                    <input class="radio" type="radio" id="m" name="sizes">
+                                    <label class="label_size size2" for="m">
+                                        <span class="size_text">m</span>
+                                    </label>
+                                </div>
+
+                                <div class="sizes">
+                                    <input class="radio" type="radio" id="l" name="sizes">
+                                    <label class="label_size size3" for="l">
+                                        <span class="size_text">l</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="description_details">
+                            <h6 class="details_title">
+                                Детали:
+                            </h6>
+                            <p class="details_info">
+                                Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%
+                            </p>
+
+                            <h6 class="order_info_title">
+                                Как выбрать размер:
+                            </h6>
+                            <p class="order_info_text">
+                                Написать дяде Рику для уточнения.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="/src/js/main.js"></script>
+</body>
+
 </html>
