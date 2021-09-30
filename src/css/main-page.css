@@ -1,0 +1,460 @@
+body,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+ul,
+li {
+    padding: 0;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+h6 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+
+.grey_text {
+    color: #888b94;
+}
+
+.main_wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100vh;
+    padding: 32px;
+}
+
+/* Header */
+
+.header {
+    max-width: 1368px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 4px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 1317px;
+    min-height: 100%;
+}
+
+.logo_input {
+    display: flex;
+}
+
+.logo_image {
+    display: flex;
+    align-items: center;
+    margin-right: 66px;
+    height: 44px;
+}
+
+.search_block {
+    display: inline-block;
+    width: 308px;
+    background: #f2f2f3;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    padding: 8px 8px 8px 56px;
+    border: none;
+    cursor: auto;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search_block:focus {
+    outline-color: #2a81dd;
+}
+
+.search {
+    position: relative;
+}
+
+.scope {
+    position: absolute;
+    top: 25%;
+    left: 19px;
+}
+
+.scope_btn {
+    border: none;
+    background: inherit;
+    cursor: pointer;
+}
+
+.scope_icon:hover {
+    -webkit-transform: scale(-1.1, -1.1);
+    transform: scale(1.1, 1.1);
+}
+
+.profile {
+    height: 44px;
+    width: 144px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.profile_image {
+    border-radius: 50%;
+}
+
+.profile_info {
+    margin-left: 16px;
+}
+
+.profile_name {
+    font-weight: 600;
+    color: #2a81dd;
+}
+
+/* Main - navigation */
+
+.menu_block {
+    margin-top: 30px;
+    width: 280px;
+    min-height: 424px;
+}
+
+.nav_item {
+    margin-bottom: 26px;
+    position: relative;
+}
+
+.nav_item_link:hover {
+    font-weight: 600;
+}
+
+.nav_item_link:hover::before {
+    box-sizing: border-box;
+    opacity: 1;
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -10px;
+    height: 36px;
+    border: 2px solid #2a81dd;
+    border-radius: 10px;
+    background: #2a81dd;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.nav_item_link {
+    display: inline-block;
+    color: black;
+}
+
+/* Main - content */
+
+.banner {
+    margin-top: 24px;
+}
+
+.content_block {
+    width: 1038px;
+    height: fit-content;
+}
+
+/* Main - Кнопки Инфо как получить баллы */
+
+.action_bars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1038px;
+    height: fit-content;
+    margin-bottom: 40px;
+}
+
+.btn {
+    height: 76px;
+    width: 330px;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    -webkit-transform: scale(-1.1, -1.1);
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.info_button1 {
+    position: relative;
+    background: #eff8eb;
+}
+
+.info_button1::before {
+    content: '';
+    width: 48px;
+    height: 56px;
+    position: absolute;
+    background: url(/src/assets/plus.png);
+    background-repeat: no-repeat;
+    left: 16px;
+    top: 25%;
+}
+
+.info_button1:active + .info_button1::before {
+    transform: rotate(360deg);
+}
+
+.info_button2 {
+    position: relative;
+    background: #fffae7;
+}
+
+.info_button2::before {
+    content: '';
+    width: 48px;
+    height: 56px;
+    position: absolute;
+    background: url(/src/assets/que.png);
+    background-repeat: no-repeat;
+    left: 16px;
+    top: 25%;
+}
+
+.info_button3 {
+    position: relative;
+    background: #e9f2fb;
+}
+
+.info_button3::before {
+    content: '';
+    width: 48px;
+    height: 56px;
+    position: absolute;
+    background: url(/src/assets/gift.png);
+    background-repeat: no-repeat;
+    left: 16px;
+    top: 25%;
+}
+
+/* Фильтры товаров */
+
+.filter_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1038px;
+    margin-bottom: 16px;
+}
+
+.filter_btn {
+    height: 36px;
+    border: 1px solid #8d8c8d;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    outline: none;
+    margin-right: 8px;
+    padding: 6px 20px;
+    color: #2a81dd;
+}
+
+.filter_btn:active {
+    background: #d6ecfb;
+}
+
+.filter_btn:focus {
+    vertical-align: middle;
+    background: #d6ecfb;
+    color: black;
+    border: none;
+}
+
+/* Карточки товаров */
+
+.item_cards {
+    display: grid;
+    grid-template-columns: 330px 330px 330px;
+    grid-auto-rows: 474px;
+    gap: 24px;
+    margin-bottom: 198px;
+}
+
+/* new card */
+.new_collection_card {
+    background: #fff;
+    border-radius: 8px;
+    height: fit-content;
+    height: 518px;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.new_collection_card:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.new_collection_card:hover .order_button {
+    opacity: 1;
+}
+
+.points {
+    color: #2a81dd;
+}
+
+.new_collection_card:hover .points {
+    color: #f33;
+}
+
+.image {
+    position: relative;
+}
+
+.new_label {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    font-size: 13px;
+    line-height: 20px;
+    background: #64bd38;
+    padding: 0 4px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.card_description {
+    padding: 16px;
+}
+
+.card_description_title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.order_button {
+    opacity: 0;
+    position: absolute;
+    left: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.order_btn {
+    cursor: pointer;
+    width: 298px;
+    padding: 10px;
+    height: 44px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #2a81dd;
+    box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-bottom: 16px;
+}
+
+/* casual card свитшот */
+
+.casual_card {
+    width: 330px;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    height: 518px;
+    cursor: pointer;
+    margin-right: 10px;
+    padding-bottom: 16px;
+}
+
+.casual_card:hover {
+    position: absolute;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.casual_card:hover .order_button {
+    opacity: 1;
+}
+
+.casual_card:hover .points {
+    color: #f33;
+}
+
+/* footer */
+
+.footer {
+    border: 1px solid black;
+    height: 80px;
+    position: sticky;
+    background: #1c1819;
+    margin: 0 auto;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    color: white;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.feedbak_link {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.info_icon_link {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin-right: 8px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.feedback {
+    display: flex;
+    align-items: center;
+}
+
+.feedback_btn {
+    background: #fff;
+    color: #2a81dd;
+    width: 150px;
+    height: 36px;
+    border-radius: 8px;
+    margin-left: 40px;
+    cursor: pointer;
+}

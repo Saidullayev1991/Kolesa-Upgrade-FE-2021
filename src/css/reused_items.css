@@ -31,10 +31,6 @@ h6 {
     margin-bottom: 4px;
 }
 
-:root {
-    --micro: (/src/assets/one.svg);
-}
-
 .grey_text {
     color: #888b94;
 }
@@ -70,6 +66,9 @@ h6 {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
 }
 
 /* Карточка товаров c батоном и красным текстом */
@@ -158,6 +157,8 @@ h6 {
     text-transform: uppercase;
     color: #fff;
 }
+
+/* Карточка как получить баллы */
 
 .points_block {
     position: relative;
