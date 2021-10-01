@@ -56,16 +56,19 @@ h6 {
 .container {
     display: flex;
     justify-content: space-between;
-    width: 1317px;
+    max-width: 1317px;
+    width: 100%;
     min-height: 100%;
 }
 
 .logo_input {
     display: flex;
+    align-items: center;
 }
 
 .logo_image {
     display: flex;
+    cursor: pointer;
     align-items: center;
     margin-right: 66px;
     height: 44px;
@@ -98,45 +101,13 @@ h6 {
     background: inherit;
     cursor: pointer;
     position: absolute;
-    top: 25%;
+    top: 14px;
     left: 19px;
 }
 
 .scope_icon:hover {
-    -webkit-transform: scale(-1.1, -1.1);
-    transform: scale(1.1, 1.1);
-}
-
-.profile {
-    height: 44px;
-    width: 144px;
-    align-items: center;
-    justify-content: center;
-}
-
-.profile_link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-}
-
-.profile_image {
-    border-radius: 50%;
-}
-
-.profile_info {
-    margin-left: 16px;
-}
-
-.profile_name {
-    display: block;
-    font-weight: 600;
-    color: #2a81dd;
-}
-
-.profile_points {
-    display: block;
+    -webkit-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
 }
 
 /* Main - navigation */
@@ -326,6 +297,7 @@ h6 {
 .item_card {
     max-width: 330px;
     position: relative;
+    min-height: 474px;
     margin-bottom: 16px;
     border-radius: 8px;
 }
@@ -333,19 +305,22 @@ h6 {
 /* new card */
 .new_collection_card {
     border-radius: 8px;
+    z-index: 1;
     cursor: pointer;
+    position: absolute;
     padding-bottom: 16px;
+    max-width: 330px;
 }
 
 .new_collection_card:hover {
     transition: all ease 0.5s;
+    z-index: 2;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .new_collection_card:hover .order_btn {
     cursor: pointer;
-    opacity: 1;
-    visibility: visible;
+    display: block;
     transition: all ease 0.5s;
 }
 
@@ -359,9 +334,8 @@ h6 {
     background-color: #2a81dd;
     border-radius: 8px;
     border: none;
-    margin-left: 16px;
-    opacity: 1;
-    visibility: hidden;
+    display: none;
+    margin-top: 16px;
 }
 
 .points {
@@ -409,6 +383,7 @@ h6 {
     background: #1c1819;
     margin: 0 auto;
     left: 0;
+    z-index: 2;
     bottom: 0;
     width: 100%;
     padding: 20px;
