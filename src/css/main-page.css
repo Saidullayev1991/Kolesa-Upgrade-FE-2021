@@ -155,7 +155,6 @@ h6 {
 
 .nav_item_link:hover {
     font-weight: 600;
-    -webkit-transform: scale(-1.1, -1.1);
     transform: scale(1.1, 1.1);
 }
 
@@ -224,7 +223,6 @@ h6 {
 }
 
 .btn:hover {
-    -webkit-transform: scale(-1.1, -1.1);
     transform: scale(1.1, 1.1);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -310,7 +308,6 @@ h6 {
 }
 
 .filter_btn:hover {
-    -webkit-transform: scale(-1.1, -1.1);
     transform: scale(1.1, 1.1);
     background: #eff8eb;
 }
@@ -322,6 +319,7 @@ h6 {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
     box-sizing: border-box;
+    margin-bottom: 68px;
 }
 
 .item_card {
@@ -338,7 +336,6 @@ h6 {
     z-index: 1;
     cursor: pointer;
     position: absolute;
-    padding-bottom: 16px;
     max-width: 330px;
 }
 
@@ -443,9 +440,21 @@ h6 {
     font-weight: 400;
 }
 
+.link_icon:hover {
+    transform: scale(1.3, 1.3);
+}
+
 .feedback {
     display: flex;
     align-items: center;
+}
+
+.feedback_link {
+    color: #fff;
+}
+
+.feedback_link:hover {
+    transform: scale(1.1, 1.1);
 }
 
 .feedback_btn {
@@ -456,4 +465,13 @@ h6 {
     border-radius: 8px;
     margin-left: 40px;
     cursor: pointer;
+    border: none;
+}
+
+.feedback_btn:hover {
+    transition: all ease 0.5s;
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    outline: none;
+    border: 2px solid #2a81dd;
 }
