@@ -56,9 +56,39 @@ h6 {
 .container {
     display: flex;
     justify-content: space-between;
-    max-width: 1317px;
+    max-width: 1319px;
     width: 100%;
     min-height: 100%;
+}
+
+.profile {
+    display: flex;
+}
+
+.profile_image {
+    display: block;
+    border-radius: 50%;
+}
+
+.profile_link {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.profile_info {
+    display: block;
+    margin-left: 16px;
+}
+
+.profile_name {
+    font-weight: 600;
+    color: #2a81dd;
+}
+
+.profile_points {
+    display: block;
+    font-size: 13px;
 }
 
 .logo_input {
