@@ -1,0 +1,134 @@
+$black-color: #1c1819;
+$blue-color: #2a81dd;
+$white-color: #fff;
+$red-color: #f33;
+$card-label: #64bd38;
+
+$btn-get: #eff8eb;
+$btn-how: #fffae7;
+$btn-gift: #e9f2fb;
+$tabs: #d6ecfb;
+$search: #f2f2f3;
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100vh;
+    padding-top: 32px;
+}
+
+.header {
+    display: flex;
+    flex: 1 0 auto;
+    height: 100%;
+    max-height: 48px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 4px 0;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1319px;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    &__block {
+        display: flex;
+        align-items: center;
+        margin-right: 66px;
+        height: 44px;
+    }
+}
+
+.headerinfo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.profile {
+    display: flex;
+
+    &__link {
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__image {
+        border-radius: 50%;
+    }
+
+    &__info {
+        display: block;
+        margin-left: 16px;
+    }
+
+    &__name {
+        font-weight: 600;
+        color: #2a81dd;
+    }
+
+    &__points {
+        display: block;
+        font-size: 13px;
+    }
+}
+
+.search {
+    position: relative;
+
+    &__input {
+        display: inline-block;
+        width: 308px;
+        position: relative;
+        background: $search;
+        border-radius: 8px;
+        border: none;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 400;
+        padding: 8px 8px 8px 56px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+        &:focus {
+            outline: none;
+            border: 2px solid $blue-color;
+        }
+    }
+
+    &__btn {
+        border: none;
+        position: absolute;
+        background: inherit;
+        cursor: pointer;
+        top: 14px;
+        left: 19px;
+    }
+
+    &__icon {
+        &:hover {
+            transform: scale(1.5, 1.5);
+        }
+    }
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.nav {
+    margin-top: 30px;
+    width: 280px;
+    min-height: 424px;
+}

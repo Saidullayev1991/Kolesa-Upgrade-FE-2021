@@ -1,0 +1,492 @@
+body,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+}
+
+ul,
+li {
+    padding: 0;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+h6 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+
+.card__sizes {
+    color: #888b94;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100vh;
+    padding-top: 32px;
+}
+
+/* Header */
+
+.header {
+    flex: 1 0 auto;
+    height: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+    margin: 0 auto;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1319px;
+    width: 100%;
+}
+
+/* .headerinfo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+} */
+
+/* .profile {
+    display: flex;
+} */
+
+/* .profile--link {
+    display: flex;
+    height: 100%;
+    width: 100%;
+} */
+
+/*
+.profile__image {
+    border-radius: 50%;
+}
+
+.profile--info {
+    display: block;
+    margin-left: 16px;
+}
+
+.profile__name {
+    font-weight: 600;
+    color: #2a81dd;
+}
+
+.profile__points {
+    display: block;
+    font-size: 13px;
+} */
+
+/* .logo {
+    display: flex;
+    align-items: center;
+}
+ */
+
+/* .logo--block {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    margin-right: 66px;
+    height: 44px;
+} */
+
+/* .search__input {
+    display: inline-block;
+    width: 308px;
+    position: relative;
+    background: #f2f2f3;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    padding: 8px 8px 8px 56px;
+    border: none;
+    cursor: auto;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+} */
+
+/* .search__input:focus {
+    outline: none;
+    border: 2px solid #2a81dd;
+} */
+
+/* .search {
+    position: relative;
+} */
+
+/* .search--btn {
+    border: none;
+    position: absolute;
+    background: inherit;
+    cursor: pointer;
+    top: 14px;
+    left: 19px;
+} */
+
+/* .search__icon:hover {
+    transform: scale(1.5, 1.5);
+} */
+
+/* Main - navigation */
+
+/* .main {
+    flex: 1 0 auto;
+} */
+
+/* .menu {
+    margin-top: 30px;
+    width: 280px;
+    min-height: 424px;
+} */
+
+/* .list__item {
+    margin-bottom: 26px;
+    position: relative;
+} */
+
+.item__link:hover::before {
+    box-sizing: border-box;
+    content: '';
+    position: absolute;
+    top: -25%;
+    left: -10px;
+    height: 36px;
+    border: 2px solid #2a81dd;
+    border-radius: 10px;
+    background: #2a81dd;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.item__link {
+    display: inline-block;
+    color: black;
+}
+
+.active_link {
+    font-weight: 600;
+}
+
+.active_link::before {
+    box-sizing: border-box;
+    content: '';
+    position: absolute;
+    top: -25%;
+    left: -10px;
+    height: 36px;
+    border: 2px solid #2a81dd;
+    border-radius: 10px;
+    background: #2a81dd;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+/* Main - content */
+
+.content {
+    max-width: 1038px;
+    width: 100%;
+    height: fit-content;
+}
+
+.banner__image {
+    margin-top: 24px;
+}
+
+/* Main - Кнопки Инфо как получить баллы */
+
+.actionbars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1038px;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 40px;
+}
+
+.actionbars--btn {
+    height: 76px;
+    width: 330px;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    border: none;
+    cursor: pointer;
+}
+
+.actionbars--btn:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn__get {
+    position: relative;
+    background: #eff8eb;
+}
+
+.btn__get::before {
+    content: '';
+    width: 48px;
+    height: 56px;
+    position: absolute;
+    background: url(/src/assets/plus.png);
+    background-repeat: no-repeat;
+    left: 16px;
+    top: 25%;
+}
+
+.btn__how {
+    position: relative;
+    background: #fffae7;
+}
+
+.btn__how::before {
+    content: '';
+    width: 48px;
+    height: 56px;
+    position: absolute;
+    background: url(/src/assets/que.png);
+    background-repeat: no-repeat;
+    left: 16px;
+    top: 25%;
+}
+
+.btn__gift {
+    position: relative;
+    background: #e9f2fb;
+}
+
+.btn__gift::before {
+    content: '';
+    width: 48px;
+    height: 56px;
+    position: absolute;
+    background: url(/src/assets/gift.png);
+    background-repeat: no-repeat;
+    left: 16px;
+    top: 25%;
+}
+
+/* Фильтры товаров */
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1038px;
+    margin-bottom: 16px;
+}
+
+.tabs--btn {
+    height: 36px;
+    border: 1px solid #8d8c8d;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    outline: none;
+    margin-right: 8px;
+    padding: 6px 20px;
+    color: #2a81dd;
+}
+
+.tabs--btn:focus {
+    vertical-align: middle;
+    background: #d6ecfb;
+    color: black;
+    border: none;
+}
+
+.tabs--btn:hover {
+    transform: scale(1.1, 1.1);
+    background: #eff8eb;
+}
+
+/* Карточки товаров */
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    box-sizing: border-box;
+    margin-bottom: 68px;
+}
+
+.cardwrapper {
+    max-width: 330px;
+    position: relative;
+    min-height: 474px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+/* new card */
+.card {
+    border-radius: 8px;
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    max-width: 330px;
+}
+
+.card:hover {
+    transition: all ease-in-out	0.3s;
+    z-index: 2;
+    box-shadow: 0 2px 10px rgba(28, 24, 25, 0.1);
+}
+
+.card:hover .card__btn {
+    cursor: pointer;
+    display: block;
+    transition: ease 0.5s;
+}
+
+.card__btn {
+    width: 298px;
+    padding: 10px;
+    height: 44px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #2a81dd;
+    border-radius: 8px;
+    border: none;
+    display: none;
+    margin-top: 16px;
+}
+
+.card__points {
+    color: #2a81dd;
+}
+
+.card:hover .card__points {
+    color: #f33;
+}
+
+.card--image {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.card__label {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    font-size: 13px;
+    line-height: 20px;
+    background: #64bd38;
+    padding: 0 4px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.card--description {
+    padding: 16px;
+}
+
+.card__title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* footer */
+
+.footer {
+    border: 1px solid black;
+    height: fit-content;
+    background: #1c1819;
+    margin: 0 auto;
+    left: 0;
+    z-index: 2;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    flex-shrink: 0;
+    color: white;
+}
+
+.footer--content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.feedbak_link {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.socialnet__link {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin-right: 8px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.link_icon:hover {
+    transform: scale(1.3, 1.3);
+    transition: ease 0.3s;
+}
+
+.feedback {
+    display: flex;
+    align-items: center;
+}
+
+.feedback_link {
+    color: #fff;
+}
+
+.feedback_link:hover {
+    transform: scale(1.1, 1.1);
+    transition: ease 0.3s;
+}
+
+.feedback_btn {
+    background: #fff;
+    color: #2a81dd;
+    width: 150px;
+    height: 36px;
+    border-radius: 8px;
+    margin-left: 40px;
+    cursor: pointer;
+    border: none;
+}
+
+.feedback_btn:hover {
+    transition: ease 0.3s;
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    outline: none;
+    border: 2px solid #2a81dd;
+}
