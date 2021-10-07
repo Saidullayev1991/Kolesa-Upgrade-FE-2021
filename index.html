@@ -2,133 +2,441 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <title>Lesson2</title>
+    <title>Главная страница</title>
 </head>
 
 <body>
-    <div id="app">
-        <div class="order_wrapper">
+    <div class="wrapper">
+        <header class="header">
             <div class="container">
-                <div class="close_button">
-                    <button class="close_modal_btn">
-                    </button>
-                </div>
-                <div class="image">
-                    <img src="./src/assets/hoody.jpg" alt="hoody_image" class="hoody" width="330" height="330">
-                    <div class="image_prview">
-                        <img class="preview_img" src="./src/assets/first.png" alt="melange hoody">
-                        <img class="preview_img active" src="./src/assets/second.png" alt="blue hoody">
-                        <img class="preview_img" src="./src/assets/third.png" alt="grey hoody">
-
+                <div class="logo">
+                    <div class="logo--block">
+                        <a href="https://upgrade.kolesa.group/?utm_source=job" class="logo--link" target="_blank">
+                            <img src="./src/assets/logo_image.svg" alt="logo" class="logo--image">
+                        </a>
                     </div>
                 </div>
-                <div class="description">
-                    <div class="description_info">
-                        <h3 class="description_info_title">
-                            Футболка "Эволюционируй или сдохни"
-                        </h3>
-
-                        <div class="description_info_block">
-                            <div class="points">
-                                <p class="description_info_points">
-                                    100 баллов
-                                </p>
-                                <button class="description_info_btn">Попросить 50 баллов</button>
-                            </div>
-                            <div class="ballance">
-                                <p class="ballance_text">
-                                    Твой балланс:
-                                </p>
-                                <p class="ballance_count">
-                                    50 баллов
-                                </p>
-                            </div>
-                        </div>
+                <div class="headerinfo">
+                    <form class="headerinfo--search search">
+                        <input type="text" placeholder="Поиск" class="search__input">
+                        <button class="search--btn">
+                            <img src="./src/assets/loopa.svg" alt="search icon" class="search__icon">
+                        </button>
+                    </form>
+                    <div class="profile">
+                        <a href="https://www.google.com/" target="_blank" class="profile--link">
+                            <img src="./src/assets/morty.png" alt="morty" class="profile__image">
+                            <span class="profile--info">
+                                <span class="profile__name">
+                                    Мортиджан
+                                </span>
+                                <span class="profile__points">
+                                    300 баллов
+                                </span>
+                            </span>
+                        </a>
                     </div>
+                </div>
+            </div>
+        </header>
 
-                    <div class="description_colors">
-                        <h6 class="color_text">
-                            Цвета:
-                        </h6>
-                        <div class="radioblock">
-                            <div class="colours">
-                                <div class="radio1">
-                                    <input class="radio" type="radio" id="blue" name="colors" checked>
-                                    <label class="label_color color1" for="blue">
-                                        <span class="label_text">Синий</span>
-                                    </label>
+        <main class="main">
+            <div class="container">
+                <aside class="menu">
+                    <ul class="menu--list">
+                        <li class="list__item">
+                            <a href="#" class="item__link active_link">
+                                Оргсхема
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="item__link">
+                                Kolesa
+                                <strong>Team</strong>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="item__link" target="_blank">
+                                Kolesa Shop
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="item__link" target="_blank">
+                                Картина компании
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="item__link" target="_blank">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="item__link" target="_blank">
+                                Education
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="item__link" target="_blank">
+                                Guidelines
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="item__link" target="_blank">
+                                Библиотека
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="item__link" target="_blank">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+                <div class="content">
+                    <div class="banner">
+                        <img src="./src/assets/banner.jpg" alt="banner" class="banner__image" width="1038" height="335">
+                    </div>
+                    <div class="actionbars">
+                        <button class="actionbars--btn btn__get">
+                            Получить баллы
+                        </button>
+                        <button class="actionbars--btn btn__how">
+                            Как получить баллы
+                        </button>
+                        <button class="actionbars--btn btn__gift">
+                            Подарить баллы
+                        </button>
+                    </div>
+                    <div class="tabs">
+                        <button class="tabs--btn selected">
+                            Все товары
+                        </button>
+                        <button class="tabs--btn">
+                            Одежда
+                        </button>
+                        <button class="tabs--btn">
+                            Аксессуары
+                        </button>
+                    </div>
+                    <div class="cards">
+                        <div class="cardwrapper">
+                            <div class="card">
+                                <div class="card--image">
+                                    <img src="./src/assets/t-shirt.jpg" alt="hoody_image" class="card--image__tshirt" width="330"
+                                        height="330">
+                                    <span class="card__label">new</span>
                                 </div>
-
-                                <div class="radio2">
-                                    <input class="radio" type="radio" id="melange" name="colors">
-                                    <label class="label_color color2" for="melange">
-                                        <span class="label_text">Бежевый</span>
-                                    </label>
-                                </div>
-                                <div class="radio3">
-                                    <input class="radio" type="radio" id="grey" name="colors">
-                                    <label class="label_color color3" for="grey">
-                                        <span class="label_text">Серый</span>
-                                    </label>
+                                <div class="card--description">
+                                    <h3 class="card__points">
+                                        220 баллов
+                                    </h3>
+                                    <h6 class="card__title">
+                                        Футболка "Эволюционируй или сдохни"
+                                    </h6>
+                                    <p class="card__sizes">
+                                        Размеры S/M/L
+                                    </p>
+                                    <button class="card__btn">
+                                        Заказать
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="description_sizes">
-                            <h6 class="description_size_text">
-                                Размер:
-                            </h6>
-                            <div class="description_size_name">
-                                <div class="sizes">
-                                    <input class="radio" type="radio" id="s" name="sizes" checked>
-                                    <label class="label_size size1" for="s">
-                                        <span class="size_text">s</span>
-                                    </label>
+                        <div class="cardwrapper">
+                            <div class="card">
+                                <div class="card--image">
+                                    <img src="./src/assets/t-shirt.jpg" alt="hoody_image" class="card--image__tshirt" width="330"
+                                        height="330">
+                                    <span class="card__label">new</span>
                                 </div>
-
-                                <div class="sizes">
-                                    <input class="radio" type="radio" id="m" name="sizes">
-                                    <label class="label_size size2" for="m">
-                                        <span class="size_text">m</span>
-                                    </label>
-                                </div>
-
-                                <div class="sizes">
-                                    <input class="radio" type="radio" id="l" name="sizes">
-                                    <label class="label_size size3" for="l">
-                                        <span class="size_text">l</span>
-                                    </label>
+                                <div class="card--description">
+                                    <h3 class="card__points">
+                                        220 баллов
+                                    </h3>
+                                    <h6 class="card__title">
+                                        Футболка "Эволюционируй или сдохни"
+                                    </h6>
+                                    <p class="card__sizes">
+                                        Размеры S/M/L
+                                    </p>
+                                    <button class="card__btn">
+                                        Заказать
+                                    </button>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="description_details">
-                            <h6 class="details_title">
-                                Детали:
-                            </h6>
-                            <p class="details_info">
-                                Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%
-                            </p>
-
-                            <h6 class="order_info_title">
-                                Как выбрать размер:
-                            </h6>
-                            <p class="order_info_text">
-                                Написать дяде Рику для уточнения.
-                            </p>
+                        <div class="cardwrapper">
+                            <div class="card">
+                                <div class="card--image">
+                                    <img src="./src/assets/t-shirt.jpg" alt="hoody_image" class="card--image__tshirt" width="330"
+                                        height="330">
+                                    <span class="card__label">new</span>
+                                </div>
+                                <div class="card--description">
+                                    <h3 class="card__points">
+                                        220 баллов
+                                    </h3>
+                                    <h6 class="card__title">
+                                        Футболка "Эволюционируй или сдохни"
+                                    </h6>
+                                    <p class="card__sizes">
+                                        Размеры S/M/L
+                                    </p>
+                                    <button class="card__btn">
+                                        Заказать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardwrapper">
+                            <div class="card">
+                                <div class="card--image">
+                                    <img src="./src/assets/t-shirt.jpg" alt="hoody_image" class="card--image__tshirt" width="330"
+                                        height="330">
+                                    <span class="card__label">new</span>
+                                </div>
+                                <div class="card--description">
+                                    <h3 class="card__points">
+                                        220 баллов
+                                    </h3>
+                                    <h6 class="card__title">
+                                        Футболка "Эволюционируй или сдохни"
+                                    </h6>
+                                    <p class="card__sizes">
+                                        Размеры S/M/L
+                                    </p>
+                                    <button class="card__btn">
+                                        Заказать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardwrapper">
+                            <div class="card">
+                                <div class="card--image">
+                                    <img src="./src/assets/t-shirt.jpg" alt="hoody_image" class="card--image__tshirt" width="330"
+                                        height="330">
+                                    <span class="card__label">new</span>
+                                </div>
+                                <div class="card--description">
+                                    <h3 class="card__points">
+                                        220 баллов
+                                    </h3>
+                                    <h6 class="card__title">
+                                        Футболка "Эволюционируй или сдохни"
+                                    </h6>
+                                    <p class="card__sizes">
+                                        Размеры S/M/L
+                                    </p>
+                                    <button class="card__btn">
+                                        Заказать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardwrapper">
+                            <div class="card">
+                                <div class="card--image">
+                                    <img src="./src/assets/t-shirt.jpg" alt="hoody_image" class="card--image__tshirt" width="330"
+                                        height="330">
+                                    <span class="card__label">new</span>
+                                </div>
+                                <div class="card--description">
+                                    <h3 class="card__points">
+                                        220 баллов
+                                    </h3>
+                                    <h6 class="card__title">
+                                        Футболка "Эволюционируй или сдохни"
+                                    </h6>
+                                    <p class="card__sizes">
+                                        Размеры S/M/L
+                                    </p>
+                                    <button class="card__btn">
+                                        Заказать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardwrapper">
+                            <div class="card">
+                                <div class="card--image">
+                                    <img src="./src/assets/t-shirt.jpg" alt="hoody_image" class="card--image__tshirt" width="330"
+                                        height="330">
+                                    <span class="card__label">new</span>
+                                </div>
+                                <div class="card--description">
+                                    <h3 class="card__points">
+                                        220 баллов
+                                    </h3>
+                                    <h6 class="card__title">
+                                        Футболка "Эволюционируй или сдохни"
+                                    </h6>
+                                    <p class="card__sizes">
+                                        Размеры S/M/L
+                                    </p>
+                                    <button class="card__btn">
+                                        Заказать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardwrapper">
+                            <div class="card">
+                                <div class="card--image">
+                                    <img src="./src/assets/t-shirt.jpg" alt="hoody_image" class="card--image__tshirt" width="330"
+                                        height="330">
+                                    <span class="card__label">new</span>
+                                </div>
+                                <div class="card--description">
+                                    <h3 class="card__points">
+                                        220 баллов
+                                    </h3>
+                                    <h6 class="card__title">
+                                        Футболка "Эволюционируй или сдохни"
+                                    </h6>
+                                    <p class="card__sizes">
+                                        Размеры S/M/L
+                                    </p>
+                                    <button class="card__btn">
+                                        Заказать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardwrapper">
+                            <div class="card">
+                                <div class="card--image">
+                                    <img src="./src/assets/t-shirt.jpg" alt="hoody_image" class="card--image__tshirt" width="330"
+                                        height="330">
+                                    <span class="card__label">new</span>
+                                </div>
+                                <div class="card--description">
+                                    <h3 class="card__points">
+                                        220 баллов
+                                    </h3>
+                                    <h6 class="card__title">
+                                        Футболка "Эволюционируй или сдохни"
+                                    </h6>
+                                    <p class="card__sizes">
+                                        Размеры S/M/L
+                                    </p>
+                                    <button class="card__btn">
+                                        Заказать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardwrapper">
+                            <div class="card">
+                                <div class="card--image">
+                                    <img src="./src/assets/t-shirt.jpg" alt="hoody_image" class="card--image__tshirt" width="330"
+                                        height="330">
+                                    <span class="card__label">new</span>
+                                </div>
+                                <div class="card--description">
+                                    <h3 class="card__points">
+                                        220 баллов
+                                    </h3>
+                                    <h6 class="card__title">
+                                        Футболка "Эволюционируй или сдохни"
+                                    </h6>
+                                    <p class="card__sizes">
+                                        Размеры S/M/L
+                                    </p>
+                                    <button class="card__btn">
+                                        Заказать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardwrapper">
+                            <div class="card">
+                                <div class="card--image">
+                                    <img src="./src/assets/t-shirt.jpg" alt="hoody_image" class="card--image__tshirt" width="330"
+                                        height="330">
+                                    <span class="card__label">new</span>
+                                </div>
+                                <div class="card--description">
+                                    <h3 class="card__points">
+                                        220 баллов
+                                    </h3>
+                                    <h6 class="card__title">
+                                        Футболка "Эволюционируй или сдохни"
+                                    </h6>
+                                    <p class="card__sizes">
+                                        Размеры S/M/L
+                                    </p>
+                                    <button class="card__btn">
+                                        Заказать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardwrapper">
+                            <div class="card">
+                                <div class="card--image">
+                                    <img src="./src/assets/t-shirt.jpg" alt="hoody_image" class="card--image__tshirt" width="330"
+                                        height="330">
+                                    <span class="card__label">new</span>
+                                </div>
+                                <div class="card--description">
+                                    <h3 class="card__points">
+                                        220 баллов
+                                    </h3>
+                                    <h6 class="card__title">
+                                        Футболка "Эволюционируй или сдохни"
+                                    </h6>
+                                    <p class="card__sizes">
+                                        Размеры S/M/L
+                                    </p>
+                                    <button class="card__btn">
+                                        Заказать
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <script type="module" src="/src/js/main.js"></script>
+        </main>
+        <footer class="footer">
+            <div class="footer--content">
+                <div class="companyinfo">
+                    <a href="https://job.kolesa.kz/about" target="_blank" class="companyinfo--link">
+                        <img src="./src/assets/company_logo.svg" alt="logo kolesa" class="company__logo">
+                    </a>
+                    <div class="companyinfo--socialnet">
+                        <a href="https://www.instagram.com/kolesagroup/?hl=en" target="_blank"
+                            class="socialnet__link"><img src="./src/assets/insta.svg" alt="icon" class="link_icon">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UC6o6waSdIvmIdvy7qTqxY9A" target="_blank"
+                            class="socialnet__link"><img src="./src/assets/youtube.svg" alt="icon" class="link_icon">
+                        </a>
+                        <a href="https://vk.com/kolesakrishamarket" target="_blank" class="socialnet__link"><img
+                                src="./src/assets/vk.svg" alt="icon" class="link_icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <a href="#" class="feedback_link">
+                        Есть идеи что улучшить?<br> Не знаешь, с кем решить проблему?
+                    </a>
+                    <button class="feedback_btn">
+                        Написать
+                    </button>
+                </div>
+            </div>
+        </footer>
     </div>
+
+    <script type="module" src="/src/js/main.js"></script>
 </body>
 
 </html>
